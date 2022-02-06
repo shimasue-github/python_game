@@ -49,3 +49,20 @@
 
     P118 キャンバスに図形表示の仕方記載
 
+【 gui1.py 】
+    テキスト入力欄
+    entry = tkinter.Entry(width=20) ex width 半角20文字
+    entry.place(x=20,y=20) 場所
+
+    文字列の取得
+    text = entry.get()
+
+    複数欄の入力欄を作成
+    text = tkinter.Text()
+
+    部位を配置
+    text.pack()
+    button.pack()
+    配置場所指定
+    text.place(x=20,y=20,width=20,height=20)
+
