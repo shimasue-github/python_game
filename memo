@@ -66,3 +66,15 @@
     配置場所指定
     text.place(x=20,y=20,width=20,height=20)
 
+【 meseege.py 】
+
+    メッセージボックス表示
+    import tkinter.messagebox　モジュール
+    def click():
+    tkinter.messagebox.showinfo("情報","ボタンを押しました") showinfo()命令でボックス
+
+    showinfo() 情報を表示
+    showwarning() 警告を表示
+    showerror() エラーを表示
+    askesno() はい or いいえ　があるボックス
+    askokcancel() オッケ or キャンセル　があるボックス 
