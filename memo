@@ -1,0 +1,44 @@
+
+【 gui.py 】
+    GUIとは
+    ▶︎ソフトウェアの動きが直感的に分かるインターフェイス
+    そのためthinterモジュール使用
+
+    #tkinterモジュールをインパクト(ティーキンター)
+    import tkinter
+    #ウィンドウの部品(オブジェクト)を作る
+    root = tkinter.Tk()
+    #ウィンドウを表示命令
+    root.mainloop()
+
+　　 ウィンドウ
+    title(幅x高さ) 命令   
+    geometry(幅x高さ)　命令  
+    minsize(幅x高さ)　最小サイズ命令
+    maxsize(幅x高さ) 最大サイズ命令
+
+    ラベル・ボタン
+    label = tkinter.Label(root , text= "テキスト", font =("フォント選択" , フォントサイズ))
+    button = tkinter.Button(root , text= "テキスト", font =("フォント選択" , フォントサイズ))
+    変数名.place(幅x高さ)
+
+        使えるフォント検索
+        import tkinter
+        import tkinter.font
+        root = tkinter.Tk()
+        print(tkinter.font.families())
+    
+    ボタンのクリック
+    クリックされえた時の変数を定義
+    def click_btn():
+        button["text"] = "クリックしました"
+    トリガー
+    ボタン記述に command=click_btn　を追加
+
+    ウィンドウ
+    canvas = tkinter.Canvas(root , width=幅 , height=高さ, bg = "背景色")
+    canvas.pack() キャンバスを配置
+
+    キャンパス
+    gazou = tkinter.PhotoImage(file="character1.png") 画像を指定
+    canvas.create_image(500,500,image= gazou) サイズとその変数を指定
