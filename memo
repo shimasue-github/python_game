@@ -42,3 +42,10 @@
     キャンパス
     gazou = tkinter.PhotoImage(file="character1.png") 画像を指定
     canvas.create_image(500,500,image= gazou) サイズとその変数を指定
+
+【 omikuzi.py 】
+    ウィンドウのサイズを固定
+    root.resizable(幅,高さ) True or False で判断
+
+    P118 キャンバスに図形表示の仕方記載
+
