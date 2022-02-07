@@ -91,4 +91,14 @@
     
     global 変数名 外側で宣言したリストを関数内で扱う時は必要
 
-    
+【 key.py 】
+
+    root.bind("<イベント",イベント発生時に実行する関数)
+        <KeyPress> キーを押した時
+        <KeyRelease> キー離れた時
+        <Motion> マウスポイント動かした時
+        <ButtonPress> マウスボタンクリックした時
+
+        keysym キー値を取得する
+        keycode キーのコードを取得する
+
